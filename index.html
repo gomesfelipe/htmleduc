@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Game - Montagem de Tags</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+<script src="../../assets/js/hamburguer.js"></script>
+
+  </head>
+  <body>
+<header class="header">
+      <a href="index.html" class="logo">DevGomes</a>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav class="navbar">
+        <a href="../index.html">Inicio</a>
+        <a href="../cv.html">Sobre</a>
+        <a href="../services.html">Serviços</a>
+        <a href="../projects.html" class="active">Projetos</a>
+        <a href="../contact.html">Contato</a>
+      </nav>
+    </header>
+        <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <div class="game-container">
+      <div class="options">
+        <div class="cabeca">
+                    <div class="conjunto">
+          <span class="material-symbols-rounded"> style </span>
+          <h2>Tags</h2>
+        </div>
+                <h3>Arraste as tags da lista à esquerda para a área de código à direita. As tags devem estar na ordem correta e completas para formar um documento HTML válido.</h1>
+        </div>
+
+        <!-- Blocos de tags HTML para arrastar -->
+        <div class="tags-container">
+          <!-- Tags Estruturais -->
+          <div class="tag" draggable="true" data-tag="<html>" title="Define a estrutura básica de um documento HTML.">HTML Tag</div>
+          <div class="tag" draggable="true" data-tag="</html>" title="Fechamento da estrutura básica do documento HTML.">
+            HTML Tag Fechamento
+          </div>
+          <div class="tag" draggable="true" data-tag="<head>" title="Contém metadados e links para scripts e estilos.">Head Tag</div>
+          <div class="tag" draggable="true" data-tag="</head>" title="Fechamento da tag head.">
+            Head Tag Fechamento
+          </div>
+          <div class="tag" draggable="true" data-tag="<body>" title="Define o corpo principal do conteúdo da página.">Body Tag</div>
+          <div class="tag" draggable="true" data-tag="</body>" title="Fechamento do corpo da página.">
+            Body Tag Fechamento
+          </div>
+  <div class="tag" draggable="true" data-tag="<meta>" title="Define metadados no documento.">Meta Tag</div>
+          <!-- Cabeçalhos -->
+          <div class="tag" draggable="true" data-tag="<h1>" title="Define o cabeçalho de nível 1 (o mais importante).">H1 Tag</div>
+          <div class="tag" draggable="true" data-tag="</h1>" title="Fechamento do cabeçalho de nível 1.">H1 Fechamento</div>
+          <div class="tag" draggable="true" data-tag="<h2>" title="Define o cabeçalho de nível 2.">H2 Tag</div>
+          <div class="tag" draggable="true" data-tag="</h2>" title="Fechamento do cabeçalho de nível 2.">H2 Fechamento</div>
+          <div class="tag" draggable="true" data-tag="<h3>" title="Define o cabeçalho de nível 3.">H3 Tag</div>
+          <div class="tag" draggable="true" data-tag="</h3>" title="Fechamento do cabeçalho de nível 3.">H3 Fechamento</div>
+          <div class="tag" draggable="true" data-tag="<h4>" title="Define o cabeçalho de nível 4.">H4 Tag</div>
+          <div class="tag" draggable="true" data-tag="</h4>" title="Fechamento do cabeçalho de nível 4.">H4 Fechamento</div>
+          <div class="tag" draggable="true" data-tag="<h5>" title="Define o cabeçalho de nível 5.">H5 Tag</div>
+          <div class="tag" draggable="true" data-tag="</h5>" title="Fechamento do cabeçalho de nível 5.">H5 Fechamento</div>
+          <div class="tag" draggable="true" data-tag="<h6>" title="Define o cabeçalho de nível 6 (o menos importante).">H6 Tag</div>
+          <div class="tag" draggable="true" data-tag="</h6>"  title="Fechamento do cabeçalho de nível 6.">H6 Fechamento</div>
+                    <div class="tag" draggable="true" data-tag="<p>"  title="Define um parágrafo de texto.">P Tag</div>
+          <div class="tag" draggable="true" data-tag="</p>" title="Fechamento do parágrafo de texto.">P Fechamento</div>
+
+        <div class="tag" draggable="true" data-tag="<br>" title="Insere uma quebra de linha.">BR Tag</div>
+        <div class="tag" draggable="true" data-tag="<hr>" title="Linha horizontal.">HR Tag</div>
+
+            <!-- Estruturais Semânticas -->
+            <div class="tag" draggable="true" data-tag="<main>" title="Define o conteúdo principal do documento.">Main Tag</div>
+            <div class="tag" draggable="true" data-tag="</main>" title="Fechamento do conteúdo principal.">Main Fechamento</div>
+            <div class="tag" draggable="true" data-tag="<figure>" title="Agrupa conteúdo de mídia, como imagens ou diagramas, com legendas.">Figure Tag</div>
+            <div class="tag" draggable="true" data-tag="</figure>" title="Fechamento do agrupamento de mídia.">Figure Fechamento</div>
+            <div class="tag" draggable="true" data-tag="<figcaption>" title="Adiciona uma legenda para uma imagem ou diagrama.">Figcaption Tag</div>
+            <div class="tag" draggable="true" data-tag="</figcaption>" title="Fechamento da legenda.">Figcaption Fechamento</div>
+            <div class="tag" draggable="true" data-tag="<time>" title="Representa uma hora ou data.">Time Tag</div>
+            <div class="tag" draggable="true" data-tag="</time>" title="Fechamento da hora ou data.">Time Fechamento</div>
+            <div class="tag" draggable="true" data-tag="<details>" title="Cria uma seção interativa que pode ser aberta ou fechada.">Details Tag</div>
+            <div class="tag" draggable="true" data-tag="</details>" title="Fechamento da seção interativa.">Details Fechamento</div>
+            <div class="tag" draggable="true" data-tag="<summary>" title="Define um título para uma seção de detalhes.">Summary Tag</div>
+            <div class="tag" draggable="true" data-tag="</summary>" title="Fechamento do título da seção de detalhes.">Summary Fechamento</div>
+
+          <!-- Conteúdo -->
+
+          <div class="tag" draggable="true" data-tag="<a href='#'>" title="Define um link clicável para outra página ou seção.">
+            Link Tag
+          </div>
+          <div class="tag" draggable="true" data-tag="</a>" title="Fechamento da tag de link.">
+            Link Fechamento
+          </div>
+          <div class="tag" draggable="true" data-tag="<img src='' alt=''>" title="Incorpora uma imagem em uma página.">
+            Imagem Tag
+          </div>
+          <div class="tag" draggable="true" data-tag="<button>" title="Define um botão clicável.">Button Tag</div>
+          <div class="tag" draggable="true" data-tag="</button>" title="Fechamento da tag de botão.">
+            Button Fechamento
+          </div>
+          <div class="tag" draggable="true" 
+          data-tag="<input type='text' placeholder='Digite aqui'>" 
+          title="Cria um campo de entrada de dados.">
+            Input Tag
+          </div>  
+
+            <!-- Multimídia e Interatividade -->
+            <div class="tag" draggable="true" data-tag="<canvas>" title="Define uma área para gráficos via scripts.">Canvas Tag</div>
+            <div class="tag" draggable="true" data-tag="</canvas>" title="Fechamento da área gráfica.">Canvas Fechamento</div>
+            <div class="tag" draggable="true" data-tag="<embed>" title="Insere conteúdo externo, como vídeos ou plugins.">Embed Tag</div>
+            <div class="tag" draggable="true" data-tag="<object>" title="Representa um recurso externo, como imagens ou plugins.">Object Tag</div>
+            <div class="tag" draggable="true" data-tag="</object>" title="Fechamento do recurso externo.">Object Fechamento</div>
+            <div class="tag" draggable="true" data-tag="<svg>" title="Define gráficos vetoriais escaláveis (SVG).">SVG Tag</div>
+            <div class="tag" draggable="true" data-tag="</svg>" title="Fechamento do gráfico SVG.">SVG Fechamento</div>
+
+
+            <!-- Formatação de Texto -->
+            <div class="tag" draggable="true" data-tag="<strong>" title="Define um texto com ênfase forte (normalmente negrito).">Strong Tag</div>
+            <div class="tag" draggable="true" data-tag="</strong>" title="Fechamento do texto com ênfase forte.">Strong Fechamento</div>
+            <div class="tag" draggable="true" data-tag="<em>" title="Define um texto com ênfase (normalmente itálico).">Emphasis Tag</div>
+            <div class="tag" draggable="true" data-tag="</em>" title="Fechamento do texto com ênfase.">Emphasis Fechamento</div>
+          <!-- Listas -->
+          <div class="tag" draggable="true" data-tag="<ul>" title="Define uma lista não ordenada (com marcadores).">UL Tag</div>
+          <div class="tag" draggable="true" data-tag="</ul>" title="Fechamento da lista não ordenada.">UL Fechamento</div>
+          <div class="tag" draggable="true" data-tag="<ol>" title="Define uma lista ordenada (numerada).">OL Tag</div>
+          <div class="tag" draggable="true" data-tag="</ol>" title="Fechamento da lista ordenada.">OL Fechamento</div>
+          <div class="tag" draggable="true" data-tag="<li>" title="Define um item de lista (em listas ordenadas ou não ordenadas).">LI Tag</div>
+          <div class="tag" draggable="true" data-tag="</li>" title="Fechamento de um item de lista.">LI Fechamento</div>
+
+          <!-- Tabelas -->
+          <div class="tag" draggable="true" data-tag="<table>" title="Define uma tabela.">Table Tag</div>
+          <div class="tag" draggable="true" data-tag="</table>" title="Fechamento da tabela.">
+            Table Fechamento
+          </div>
+          <div class="tag" draggable="true" data-tag="<thead>" title="Define o cabeçalho de uma tabela.">Thead Tag</div>
+          <div class="tag" draggable="true" data-tag="</thead>" title="Fechamento do cabeçalho da tabela.">
+            Thead Fechamento
+          </div>
+          <div class="tag" draggable="true" data-tag="<tbody>" title="Define o corpo de uma tabela.">Tbody Tag</div>
+          <div class="tag" draggable="true" data-tag="</tbody>"  title="Fechamento do corpo da tabela.">Tbody Fechamento</div>
+          <div class="tag" draggable="true" data-tag="<tr>"  title="Define uma linha em uma tabela.">TR Tag</div>
+          <div class="tag" draggable="true" data-tag="</tr>" title="Fechamento de uma linha de tabela.">TR Fechamento</div>
+          <div class="tag" draggable="true" data-tag="<td>" title="Define uma célula de dados em uma tabela.">TD Tag</div>
+          <div class="tag" draggable="true" data-tag="</td>" title="Fechamento de uma célula de dados.">TD Fechamento</div>
+          <div class="tag" draggable="true" data-tag="<th>" title="Define uma célula de cabeçalho em uma tabela.">TH Tag</div>
+          <div class="tag" draggable="true" data-tag="</th>"  title="Fechamento de uma célula de cabeçalho.">TH Fechamento</div>
+        </div>
+      </div>
+
+      <!-- Área onde o jogador irá soltar os blocos -->
+      <div class="drop-area" id="code-area">
+        <!-- Números das linhas -->
+        <div class="container-header">
+          <span class="material-symbols-rounded"> code </span>
+          <h2>Área de Código</h2>
+          <!-- Botões para validar e limpar as tags -->
+          <div class="buttons">
+            <!-- Botão de ajuda -->
+<button id="help-button" class="help-btn" title="Como utilizar"><span class="material-symbols-rounded">
+question_mark
+</span></button>
+<button id="undo-btn" popovertarget="pop-undo" title="Desfaz última ação"><span class="material-symbols-rounded">undo</span></button>
+
+            <button id="validate-button">
+              <span class="material-symbols-rounded" title="Validar Html">
+                task_alt
+              </span>
+            </button>
+            <button id="redo-btn" title="Refaz última ação"><span class="material-symbols-rounded">
+redo
+</span></button>
+            <button id="clear-button" title="Limpar Tags">
+              <span class="material-symbols-rounded"> delete </span>
+            </button>
+            
+          </div>
+        </div>
+        <div class="code-container">
+          <div class="line-numbers" id="line-numbers"></div>
+          <div class="code-output" id="code-output"></div>
+        </div>
+        <!-- Div para mostrar o resultado da validação -->
+        <div id="result" class="animation"></div>
+      </div>
+    </div>
+
+<!-- Popover para mostrar ações -->
+<div id="action-popover" class="popover">Ação realizada</div>
+<!-- Modal de ajuda -->
+<div id="help-modal" class="modal">
+  <div class="modal-content">
+<span class="close">&times;</span>
+    <div class="container-head">
+        <span class="material-symbols-rounded">
+psychology_alt
+</span>
+        <h2>Como Jogar</h2>
+            
+    </div>
+    <div class="intrucoes">
+    <p>1. Arraste as tags da lista à esquerda para a área de código à direita.</p>
+    <p>2. Monte um documento HTML válido utilizando as tags de forma correta.</p>
+    <p>3. Clique no botão "Validar HTML" para verificar se o código está correto.</p>
+    <p>4. As tags essenciais como <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, e <code>&lt;body&gt;</code> devem estar sempre presentes.</p>
+    <p>5. Para remover as tags, clique no botão "Limpar Tags".</p>
+    <p><b>Comandos: </b>CTRL+Z desfaz última ação, CTRL+Y refaz última ação, Ctrl + Shift + X limpa a área de código</p>
+    </div>
+
+  </div>
+</div>
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+  </body>
+</html>
