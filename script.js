@@ -383,4 +383,82 @@ document.addEventListener("keydown", function (e) {
   if (e.ctrlKey && e.shiftKey && e.key === "X") {
     clearAllTags();
   }
+  if (e.ctrlKey && e.key === "c") {
+    copyCodeToClipboard();
+  }
+  if (e.ctrlKey && e.key === "v") {
+    e.preventDefault(); // Prevent the default paste behavior
+    pasteCodeFromClipboard();
+  }
 });
+// Add click event listener to the copy button
+document
+  .getElementById("copy-button")
+  .addEventListener("click", copyCodeToClipboard);
+document
+  .getElementById("paste-button")
+  .addEventListener("click", pasteCodeFromClipboard);
+
+// Function to validate if the content is valid HTML tags
+function isValidHTMLContent(text) {
+  const htmlTagPattern = /<\/?[\w\s="/.':;#-\/\?]+>/gi;
+  return htmlTagPattern.test(text);
+}
+
+// Function to copy content from the code area to the clipboard
+function copyCodeToClipboard() {
+  const codeOutput = document.getElementById("code-output");
+
+  // Create a temporary textarea element to hold the code
+  const tempTextArea = document.createElement("textarea");
+  tempTextArea.value = codeOutput.innerText; // Get the text inside the code output
+
+  // Append the textarea to the document to enable copying
+  document.body.appendChild(tempTextArea);
+
+  // Select and copy the text
+  tempTextArea.select();
+  document.execCommand("copy");
+
+  // Remove the temporary textarea
+  document.body.removeChild(tempTextArea);
+
+  // Optional: Show a message or notification indicating successful copy
+  showActionPopover("Conteúdo copiado para o clipboard!");
+}
+
+// Function to paste content from the clipboard into the code area
+async function pasteCodeFromClipboard() {
+  const codeOutput = document.getElementById("code-output");
+
+  try {
+    // Get clipboard text content
+    const clipboardText = await navigator.clipboard.readText();
+
+    // Validate if the clipboard content is valid HTML
+    if (!isValidHTMLContent(clipboardText)) {
+      showActionPopover(
+        "O conteúdo colado não é válido! Por favor, cole apenas tags HTML."
+      );
+      return;
+    }
+
+    // Split the pasted content into individual lines (if multiline input) and create divs for each
+    const lines = clipboardText.split("\n");
+
+    lines.forEach((line) => {
+      const tagDiv = document.createElement("div");
+      tagDiv.classList.add("code-tag");
+      tagDiv.innerText = line.trim(); // Trim any extra whitespace from each line
+      codeOutput.appendChild(tagDiv);
+    });
+
+    // Update line numbers after pasting
+    updateLineNumbers();
+
+    // Optional: Show a message or notification indicating successful paste
+    showActionPopover("Conteúdo colado com sucesso!");
+  } catch (err) {
+    console.error("Failed to read clipboard contents: ", err);
+  }
+}

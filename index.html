@@ -3,26 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Game - Montagem de Tags</title>
+    <title>HTML Game - Montagem de estrutura básica HTML e suas Tags</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
     />
     <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cooltipz-css@2.3.0/cooltipz.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="../../assets/js/hamburguer.js"></script>
 
   </head>
   <body>
 <header class="header">
-      <a href="index.html" class="logo">DevGomes</a>
+      <a href="https://devgomes.com/" class="logo">DevGomes</a>
       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <nav class="navbar">
-        <a href="../index.html">Inicio</a>
-        <a href="../cv.html">Sobre</a>
-        <a href="../services.html">Serviços</a>
-        <a href="../projects.html" class="active">Projetos</a>
-        <a href="../contact.html">Contato</a>
+        <a href="../../index.html">Inicio</a>
+        <a href="../../cv.html">Sobre</a>
+        <a href="../../services.html">Serviços</a>
+        <a href="../../projects.html" class="active">Projetos</a>
+        <a href="../../contact.html">Contato</a>
       </nav>
     </header>
         <div vw class="enabled">
@@ -45,7 +47,7 @@
         <!-- Blocos de tags HTML para arrastar -->
         <div class="tags-container">
           <!-- Tags Estruturais -->
-          <div class="tag" draggable="true" data-tag="<html>" title="Define a estrutura básica de um documento HTML.">HTML Tag</div>
+          <div class="tag" draggable="true" data-tag="<html>" title="Define a estrutura básica de um documento HTML." aria-label="Define a estrutura básica de um documento HTML.">HTML Tag</div>
           <div class="tag" draggable="true" data-tag="</html>" title="Fechamento da estrutura básica do documento HTML.">
             HTML Tag Fechamento
           </div>
@@ -57,7 +59,7 @@
           <div class="tag" draggable="true" data-tag="</body>" title="Fechamento do corpo da página.">
             Body Tag Fechamento
           </div>
-  <div class="tag" draggable="true" data-tag="<meta>" title="Define metadados no documento.">Meta Tag</div>
+          <div class="tag" draggable="true" data-tag="<meta>" title="Define metadados no documento.">Meta Tag</div>
           <!-- Cabeçalhos -->
           <div class="tag" draggable="true" data-tag="<h1>" title="Define o cabeçalho de nível 1 (o mais importante).">H1 Tag</div>
           <div class="tag" draggable="true" data-tag="</h1>" title="Fechamento do cabeçalho de nível 1.">H1 Fechamento</div>
@@ -74,8 +76,13 @@
                     <div class="tag" draggable="true" data-tag="<p>"  title="Define um parágrafo de texto.">P Tag</div>
           <div class="tag" draggable="true" data-tag="</p>" title="Fechamento do parágrafo de texto.">P Fechamento</div>
 
-        <div class="tag" draggable="true" data-tag="<br>" title="Insere uma quebra de linha.">BR Tag</div>
-        <div class="tag" draggable="true" data-tag="<hr>" title="Linha horizontal.">HR Tag</div>
+            <!-- Formatação de Texto -->
+            <div class="tag" draggable="true" data-tag="<br>" title="Insere uma quebra de linha.">BR Tag</div>
+            <div class="tag" draggable="true" data-tag="<hr>" title="Linha horizontal.">HR Tag</div>
+            <div class="tag" draggable="true" data-tag="<strong>" title="Define um texto com ênfase forte (normalmente negrito).">Strong Tag</div>
+            <div class="tag" draggable="true" data-tag="</strong>" title="Fechamento do texto com ênfase forte.">Strong Fechamento</div>
+            <div class="tag" draggable="true" data-tag="<em>" title="Define um texto com ênfase (normalmente itálico).">Emphasis Tag</div>
+            <div class="tag" draggable="true" data-tag="</em>" title="Fechamento do texto com ênfase.">Emphasis Fechamento</div>
 
             <!-- Estruturais Semânticas -->
             <div class="tag" draggable="true" data-tag="<main>" title="Define o conteúdo principal do documento.">Main Tag</div>
@@ -113,20 +120,14 @@
           </div>  
 
             <!-- Multimídia e Interatividade -->
-            <div class="tag" draggable="true" data-tag="<canvas>" title="Define uma área para gráficos via scripts.">Canvas Tag</div>
-            <div class="tag" draggable="true" data-tag="</canvas>" title="Fechamento da área gráfica.">Canvas Fechamento</div>
-            <div class="tag" draggable="true" data-tag="<embed>" title="Insere conteúdo externo, como vídeos ou plugins.">Embed Tag</div>
-            <div class="tag" draggable="true" data-tag="<object>" title="Representa um recurso externo, como imagens ou plugins.">Object Tag</div>
-            <div class="tag" draggable="true" data-tag="</object>" title="Fechamento do recurso externo.">Object Fechamento</div>
-            <div class="tag" draggable="true" data-tag="<svg>" title="Define gráficos vetoriais escaláveis (SVG).">SVG Tag</div>
-            <div class="tag" draggable="true" data-tag="</svg>" title="Fechamento do gráfico SVG.">SVG Fechamento</div>
+            <div class="tag tag-interactive" draggable="true" data-tag="<canvas>" title="Define uma área para gráficos via scripts.">Canvas Tag</div>
+            <div class="tag tag-interactive" draggable="true" data-tag="</canvas>" title="Fechamento da área gráfica.">Canvas Fechamento</div>
+            <div class="tag tag-interactive" draggable="true" data-tag="<embed>" title="Insere conteúdo externo, como vídeos ou plugins.">Embed Tag</div>
+            <div class="tag tag-interactive" draggable="true" data-tag="<object>" title="Representa um recurso externo, como imagens ou plugins.">Object Tag</div>
+            <div class="tag tag-interactive" draggable="true" data-tag="</object>" title="Fechamento do recurso externo.">Object Fechamento</div>
+            <div class="tag tag-interactive" draggable="true" data-tag="<svg>" title="Define gráficos vetoriais escaláveis (SVG).">SVG Tag</div>
+            <div class="tag tag-interactive" draggable="true" data-tag="</svg>" title="Fechamento do gráfico SVG.">SVG Fechamento</div>
 
-
-            <!-- Formatação de Texto -->
-            <div class="tag" draggable="true" data-tag="<strong>" title="Define um texto com ênfase forte (normalmente negrito).">Strong Tag</div>
-            <div class="tag" draggable="true" data-tag="</strong>" title="Fechamento do texto com ênfase forte.">Strong Fechamento</div>
-            <div class="tag" draggable="true" data-tag="<em>" title="Define um texto com ênfase (normalmente itálico).">Emphasis Tag</div>
-            <div class="tag" draggable="true" data-tag="</em>" title="Fechamento do texto com ênfase.">Emphasis Fechamento</div>
           <!-- Listas -->
           <div class="tag" draggable="true" data-tag="<ul>" title="Define uma lista não ordenada (com marcadores).">UL Tag</div>
           <div class="tag" draggable="true" data-tag="</ul>" title="Fechamento da lista não ordenada.">UL Fechamento</div>
@@ -164,20 +165,20 @@
           <!-- Botões para validar e limpar as tags -->
           <div class="buttons">
             <!-- Botão de ajuda -->
-<button id="help-button" class="help-btn" title="Como utilizar"><span class="material-symbols-rounded">
-question_mark
-</span></button>
-<button id="undo-btn" popovertarget="pop-undo" title="Desfaz última ação"><span class="material-symbols-rounded">undo</span></button>
+            <button id="help-button" class="help-btn" data-cooltipz-dir="left" data-cooltipz-size="small"  aria-label="Como utilizar."><span class="material-symbols-rounded">
+            question_mark
+            </span></button>
+            <button id="undo-btn" popovertarget="pop-undo" data-cooltipz-dir="left" data-cooltipz-size="small"  aria-label="Desfaz última ação."><span class="material-symbols-rounded">undo</span></button>
 
             <button id="validate-button">
-              <span class="material-symbols-rounded" title="Validar Html">
+              <span class="material-symbols-rounded" data-cooltipz-dir="left" data-cooltipz-size="small"  aria-label="Valide o html.">
                 task_alt
               </span>
             </button>
-            <button id="redo-btn" title="Refaz última ação"><span class="material-symbols-rounded">
+            <button id="redo-btn" data-cooltipz-dir="left" data-cooltipz-size="small"  aria-label="Refaz última ação."><span class="material-symbols-rounded">
 redo
 </span></button>
-            <button id="clear-button" title="Limpar Tags">
+            <button id="clear-button" data-cooltipz-dir="left" data-cooltipz-size="small"  aria-label="Limpar tags.">
               <span class="material-symbols-rounded"> delete </span>
             </button>
             
@@ -187,8 +188,17 @@ redo
           <div class="line-numbers" id="line-numbers"></div>
           <div class="code-output" id="code-output"></div>
         </div>
-        <!-- Div para mostrar o resultado da validação -->
-        <div id="result" class="animation"></div>
+       <div class="buttons">
+               <button id="copy-button" title="Copiar Conteúdo"  data-cooltipz-dir="left" data-cooltipz-size="small"  aria-label="Copiar Conteúdo">
+          <span class="material-symbols-rounded">content_copy</span></button>
+          <button id="paste-button" title="Colar Conteúdo"  data-cooltipz-dir="left" data-cooltipz-size="small"  aria-label="Colar Conteúdo">
+  <span class="material-symbols-rounded">content_paste</span>
+</button>
+       </div>
+ 
+           <!-- Div para mostrar o resultado da validação -->
+        </button><div id="result" class="animation"></div>
+
       </div>
     </div>
 
